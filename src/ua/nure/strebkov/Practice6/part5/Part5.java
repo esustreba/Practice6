@@ -1,4 +1,4 @@
-package ua.nure.your_last_name.Practice6.part5;
+package ua.nure.strebkov.Practice6.part5;
 
 public class Part5 {
 	
