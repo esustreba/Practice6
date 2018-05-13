@@ -3,10 +3,10 @@ package ua.nure.strebkov.Practice6;
 import ua.nure.strebkov.Practice6.part1.Part1;
 import ua.nure.strebkov.Practice6.part2.Part2;
 import ua.nure.strebkov.Practice6.part3.Part3;
-import ua.nure.strebkov.Practice6.part4.Part4;
+/*import ua.nure.strebkov.Practice6.part4.Part4;
 import ua.nure.strebkov.Practice6.part5.Part5;
 import ua.nure.strebkov.Practice6.part6.Part6;
-import ua.nure.strebkov.Practice6.part7.Part7;
+import ua.nure.strebkov.Practice6.part7.Part7;*/
 
 public class Demo {
 	

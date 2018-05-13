@@ -5,7 +5,7 @@ import java.util.*;
 public class Part2 {
 	private static int size = 10000;
 
-	public static long circle(List<Integer> list) {
+	public static long circle(List<Integer> list, int k) {
 		long time = System.currentTimeMillis();
 		int count = 0;
 		Iterator<Integer> it = list.iterator();
@@ -13,7 +13,7 @@ public class Part2 {
 			if (it.hasNext()) {
 				it.next();
 				count++;
-				if (count == 3) {
+				if (count == k) {
 					it.remove();
 					count = 0;
 				}
@@ -30,14 +30,14 @@ public class Part2 {
 			arrayList.add(i);
 		}
 
-		System.out.println("Total time for ArrayList: " + circle(arrayList));
+		System.out.println("Total time for ArrayList: " + circle(arrayList, 3));
 
 		List<Integer> linkedList = new LinkedList<>();
 		for (int i = 0; i < size; i++) {
 			linkedList.add(i);
 		}
 
-		System.out.println("Total time for LinkedList: " + circle(linkedList));
+		System.out.println("Total time for LinkedList: " + circle(linkedList, 3));
 	}
 
 }
