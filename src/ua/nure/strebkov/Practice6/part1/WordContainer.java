@@ -8,7 +8,7 @@ import java.util.*;
 public class WordContainer {
 	private List<Word> words = new LinkedList<>();
 
-	public void add(String wordNew) {
+	/*public void add(String wordNew) {
 		for (Word word : words) {
 			if (word.getWord().equals(wordNew)) {
 				word.setFrequency(word.getFrequency() + 1);
@@ -16,7 +16,24 @@ public class WordContainer {
 			}
 		}
 		words.add(new Word(wordNew));
+	}*/
+
+	public void add(String input) {
+		String[] words = input.split(" ");
+		for (String word : words) {
+			Word wordObj = new Word(word);
+			if (this.words.contains(wordObj)) {
+				this.words.get(this.words.indexOf(wordObj)).upFrequency();
+			} else {
+				this.words.add(wordObj);
+			}
+		}
 	}
+
+		public List<Word> getWords () {
+			return words;
+		}
+
 
 	public void print() {
 		Collections.sort(words, new Comparator<Word>() {

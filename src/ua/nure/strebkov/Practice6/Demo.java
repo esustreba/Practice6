@@ -3,12 +3,16 @@ package ua.nure.strebkov.Practice6;
 import ua.nure.strebkov.Practice6.part1.Part1;
 import ua.nure.strebkov.Practice6.part2.Part2;
 import ua.nure.strebkov.Practice6.part3.Part3;
-/*import ua.nure.strebkov.Practice6.part4.Part4;
+import ua.nure.strebkov.Practice6.part4.Part4;
 import ua.nure.strebkov.Practice6.part5.Part5;
 import ua.nure.strebkov.Practice6.part6.Part6;
-import ua.nure.strebkov.Practice6.part7.Part7;*/
+import ua.nure.strebkov.Practice6.part7.Part7;
+
 
 public class Demo {
+
+	private static final String ENCODING = "UTF-8";
+	private static final String[] ARGS = new String[]{""};
 	
 	public static void main(String[] args) throws Exception {
 		System.out.println("~~~~~~~~~~~~Part1");
@@ -19,18 +23,18 @@ public class Demo {
 
 		System.out.println("~~~~~~~~~~~~Part3");
 		Part3.main(args);
-		
-	//	System.out.println("~~~~~~~~~~~~Part4");
-	//	Part4.main(args);
-		
-	//	System.out.println("~~~~~~~~~~~~Part5");
-	//	Part5.main(args);		
 
-	//	System.out.println("~~~~~~~~~~~~Part6");
-	//	Part6.main(args);		
+		System.out.println("~~~~~~~~~~~~Part4");
+		Part4.main(args);
+		
+		System.out.println("~~~~~~~~~~~~Part5");
+		Part5.main(args);
 
-	//	System.out.println("~~~~~~~~~~~~Part7");
-	//	Part7.main(args);		
+		System.out.println("~~~~~~~~~~~~Part6");
+		Part6.main(args);
+
+		System.out.println("~~~~~~~~~~~~Part7");
+		Part7.main(args);
 	}
 
 }
